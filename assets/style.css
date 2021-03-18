@@ -20,6 +20,7 @@ body {
   color: black;
   border-radius: 0;
   border-bottom: 1px solid #b4b4b4;
+  background-color: #dee8f1;
 }
 
 .container {
@@ -60,6 +61,10 @@ textarea {
   white-space: normal;
   text-align: center;
   padding-top: 30px;
+}
+
+#last {
+  border-bottom: 1px solid #b4b4b4;
 }
 
 .past {

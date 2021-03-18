@@ -1,9 +1,7 @@
 
-
 // document.ready
 $(function() {
     console.log("ready!");
-
 
 
 // Displays current date in header
@@ -14,9 +12,7 @@ $("#currentDay").text(todayDate.format("dddd MMM Do, YYYY"));
 var todayTime = moment();
 $("#currentTime").text(todayTime.format("LT"));
 
-
-
-
+// function to change color of each time block based on current time
 $("textarea").each(function () {
     // variable to set each rows "name"
     var name = parseInt($(this).attr("name"));
@@ -31,62 +27,41 @@ $("textarea").each(function () {
     }
 })
 
-
 });
 
 
+// variables for each time block
+var $text9AM = $("#text9AM");
+var $text10AM = $("#text10AM");
+var $text11AM = $("#text11AM");
+var $text12PM = $("#text12PM");
+var $text1PM = $("#text1PM");
+var $text2PM = $("#text2PM");
+var $text3PM = $("#text3PM");
+var $text4PM = $("#text4PM");
+var $text5PM = $("#text5PM");
 
-var saveBtn = document.getElementById("save");
-var test1 = localStorage.getItem("textInfo")
+// setting local storage
+$("button").on("click", function() {
+    console.log("I just got clicked!");
+    localStorage.setItem("9AM", ($text9AM.val()));
+    localStorage.setItem("10AM", ($text10AM.val()));
+    localStorage.setItem("11AM", ($text11AM.val()));
+    localStorage.setItem("12PM", ($text12PM.val()));
+    localStorage.setItem("1PM", ($text1PM.val()));
+    localStorage.setItem("2PM", ($text2PM.val()));
+    localStorage.setItem("3PM", ($text3PM.val()));
+    localStorage.setItem("4PM", ($text4PM.val()));
+    localStorage.setItem("5PM", ($text5PM.val()));
+    });
 
-
-saveBtn.addEventListener("click", function() {
-    console.log("I just got clicked");
-    localStorage.setItem("test", test1)
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// same code as above in JQuery to practice
-
-
-// variables for the textArea of each time row
-// var hour9AM = document.getElementById("hour9AM")
-// var hour10AM = document.getElementById("hour10AM")
-// var hour11AM = document.getElementById("hour11AM")
-// var hour12PM = document.getElementById("hour12PM")
-// var hour1PM = document.getElementById("hour1PM")
-// var hour2PM = document.getElementById("hour2PM")
-// var hour3PM = document.getElementById("hour3PM")
-// var hour4PM = document.getElementById("hour4PM")
-// var hour5PM = document.getElementById("hour5PM")
-
-
-// var hour9AM = $("#hour9AM");
-// var hour9AM = $("#hour10AM");
-// var hour9AM = $("#hour11AM");
-// var hour9AM = $("#hour12PM");
-// var hour9AM = $("#hour1PM");
-// var hour9AM = $("#hour2PM");
-// var hour9AM = $("#hour3PM");
-// var hour9AM = $("#hour4PM");
-// var hour9AM = $("#hour4PM");
+    //recovering localstorage
+    $("#text9AM").append(localStorage.getItem("9AM"));
+    $("#text10AM").append(localStorage.getItem("10AM"));
+    $("#text11AM").append(localStorage.getItem("11AM"));
+    $("#text12PM").append(localStorage.getItem("12PM"));
+    $("#text1PM").append(localStorage.getItem("1PM"));
+    $("#text2PM").append(localStorage.getItem("2PM"));
+    $("#text3PM").append(localStorage.getItem("3PM"));
+    $("#text4PM").append(localStorage.getItem("4PM"));
+    $("#text5PM").append(localStorage.getItem("5PM"));
