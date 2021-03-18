@@ -16,11 +16,20 @@ body {
 .jumbotron {
   font-family: 'Raleway', sans-serif;
   text-align: center;
-  background-color: transparent;
-  color: black;
   border-radius: 0;
   border-bottom: 1px solid #b4b4b4;
-  background-color: #dee8f1;
+  background-image: url("./images/godafoss-1840758_1920.jpg");
+  background-size: cover;
+}
+
+h1.display-3 {
+  text-shadow: 0px 0px 10px black;
+  color: white;
+}
+
+p.lead {
+  text-shadow: 0px 0px 5px black;
+  color: white;
 }
 
 .container {
@@ -42,6 +51,10 @@ textarea {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+textarea:focus {
+  background-color: #fa908b;
 }
 
 .nopadding {
@@ -107,5 +120,3 @@ button.saveBtn:hover {
 }
 
 
-
-/* @media queries */
