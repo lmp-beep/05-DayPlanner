@@ -90,10 +90,6 @@ textarea:focus {
   color: black;
 }
 
-svg#hide {
-  display: none;
-}
-
 button.saveBtn {
   border: 1px solid #838282 !important;
   box-shadow: none !important;
@@ -118,6 +114,4 @@ button.saveBtn:hover {
   background-color: #8ae0f3;
 }
 
-.test1 a {
-  text-decoration:none;
-}
+
