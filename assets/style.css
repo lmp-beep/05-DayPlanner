@@ -1,10 +1,5 @@
 
 
-
-/* create @media queries */
-
-
-
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: bolder;
@@ -18,7 +13,7 @@ body {
   text-align: center;
   border-radius: 0;
   border-bottom: 1px solid #b4b4b4;
-  background-image: url("./images/godafoss-1840758_1920.jpg");
+  background-image: url("./images/img_01.jpg");
   background-size: cover;
 }
 
@@ -95,6 +90,10 @@ textarea:focus {
   color: black;
 }
 
+svg#hide {
+  display: none;
+}
+
 button.saveBtn {
   border: 1px solid #838282 !important;
   box-shadow: none !important;
@@ -119,4 +118,6 @@ button.saveBtn:hover {
   background-color: #8ae0f3;
 }
 
-
+.test1 a {
+  text-decoration:none;
+}
